@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="https://1.bp.blogspot.com/-KBFpKuP4YB4/YD9jVMft-0I/AAAAAAABCBQ/HAV0NR4myHI8WAzbpMgjNLsBjrz3EJz-ACNcBGAsYHQ/s393/SR%2BUniversity%2Blogo.png" class="navbar-image"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav  ml-auto">
+            <a class="nav-link" href="#" >Home</a>
+            <a class="nav-link active" href="#">Login</a>
+            <a class="nav-link" href="#page2">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#" onclick="displayReq()">Requests(n)</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://media.springernature.com/full/springer-static/cover-hires/book/978-3-030-78995-4" class="book-img"/>
+            <h1 class="book-name">Electronics Engineering</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>5<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-x-yzpEkweNzkYkSKH-XaPgzbdtI8Qai1dQ&s" class="book-img"/>
+            <h1 class="book-name">Engineering Mechanics</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>7<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_iFFEkYRWRPnpb_vsXWKPc1fWQg5XGvOxg&s" class="book-img"/>
+            <h1 class="book-name">Fundamentals of software Engineering</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>3<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR775nAaRYoUwzPJPvecEkINImGQ3yU3s3bsw&s" class="book-img"/>
+            <h1 class="book-name">Mechanical Engineering</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>9<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZKONiIZQQq3LtdPZwChIKEPYfpHkketTRA&s" class="book-img"/>
+            <h1 class="book-name">Civil Engineering</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>2<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIGUdQybK8i7qj9RM8tRrpxcWJZSfuDK4djA&s" class="book-img"/>
+            <h1 class="book-name">Security Engineering</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>1<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx30Qwe1N7S4tQJkTCAi0ielX4dyTDP6Jy7w&s" class="book-img"/>
+            <h1 class="book-name">Engineering Drawing</h1>
+            <button class="book-btn" id="bookBtn"><span class="counting">+</span>8<span class="counting">-</span></button>
+          </div>
+          <div class="col-12 col-md-3 book-container">
+              <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqvJOjsBZ5ckYJvusRHEc-2X3FwlhOD3u4XQ&s" class="book-img"/>
+              <h1 class="book-name" id="bookBtn">Motor Engineering</h1>
+              <button class="book-btn" id="bookBtn"><span class="counting">+</span>10<span class="counting">-</span></button>
+        </div>
+      </div>
+    </div>
+    <script>
+        function displayReq(){
+            window.location.href="staffpage2.html";
+        }
+    </script>
+</body>
+</html>

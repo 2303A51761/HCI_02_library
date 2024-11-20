@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.label-element {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-image{
+    background-image: url("https://images.static-collegedunia.com/public/image/62423c867fdaf2e37b382a2a3ea8d8de.jpeg?tr=w-827,h-472,c-force");
+    width:100%;
+    height:100vh;
+    background-size:cover;
+}
+.navbar-image{
+    height:50px;
+}
+.navbar{
+    background-color: rgba(1,1,0,0.5);
+}
+.label-element{
+    font-weight:bold;
+    font-size: 18px;
+    margin: 5px;
+}
+.login-container{
+    background-color: rgba(0,0,0,0.5);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:30px;
+    text-align: center;
+    border-radius:5px;
+    border-width:15px;
+    border-color:#ffffff;
+}
+.login-elements {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+    align-items: flex-start; /* Align labels and inputs to the start */
+    margin: 10px 0; /* Add vertical spacing */
+}
+
+.input {
+    width: 100%; /* Ensure inputs take full width */
+    padding: 8px; /* Add some padding for better appearance */
+    border-radius: 5px; /* Consistent border radius */
+    border: 1px solid #ccc; /* Add a border */
+}
+
+
+.mov{
+    color:red;
+    font-weight: bold;
+    margin:10px;
+}
+
+.login-button{
+    background-color:lightblue;
+    padding:5px;
+    height:50px;
+    color:white;
+    border-radius:5px;
+    border-width:none;
+}
+
+.login-button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: red;
+    color:#ffffff;
+    border-radius: 5px;
+    width:80px;
+    text-align: center;
+}
+
+.nav-link{
+    font-weight: 400;
+    color:#ffffff;
+    margin:10px;
+    padding:5px;
+}
+
+.mov {
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+@media (max-width: 576px) {
+    .login-container {
+        width: 90%;
+    }
+    .login-elements {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.bg-page2{
+    background-color: aliceblue;
+    height:100vh;
+    width:100%;
+}
+
+.book-img{
+    height:150px;
+}
+
+.book-container{
+    padding:15px;
+    text-align: center;
+}
+
+.book-name{
+    font-size: 24px;
+}
+
+.book-btn{
+    background-color: green;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.student-staff{
+    font-weight: bold;
+    color:lightblue;
+}
+.bookingSecImg{
+    height:500px;
+}
+.bookingbtn{
+    background-color:green;
+    height:50px;
+    width:250px;
+    border-width: 0px;
+    margin:15px;
+}
+.bookingbtnclicked{
+    background-color:grey;
+    height:50px;
+    width:250px;
+    border-width: 0px;
+    margin:15px;
+}
+
+.counting{
+    padding:5px;
+}
+
+.staff2img{
+    height:100px;
+    width:200px;
+}
+.acceptbtn{
+    background-color: green;
+    margin:5px;
+    border-width: 0px;
+}
+.declinebtn{
+    background-color: red;
+    margin:5px;
+    border-width:0px;
+}
+.btns{
+    text-align: center;
+}
+
+.homePageContainer{
+    background-color: rgba(0,0,0,0.5);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:15px;
+    border-radius: 5px;
+    margin:8px;
+}
+.homepagePara{
+    color:white;
+    margin:5px;
+    font-size: 20px;
+    margin-top:8px;
+}
+
+.homepageContainer1{
+    background-color: rgba(0,0,0,0.5);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:15px;
+    border-radius: 5px;
+    margin:8px;
+}
